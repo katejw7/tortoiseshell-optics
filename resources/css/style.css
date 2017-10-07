@@ -9,8 +9,8 @@ div {
 }
 
 .container {
-  width: 960px;
-  margin: 0 auto;
+  max-width: 960px;
+  margin: auto;
 }
 
 .main-banner {
@@ -101,18 +101,14 @@ img.paper {
   justify-content: center;
 }
 
-.about {
-  display: flex;
-  justify-content: space-between;
-}
-
-.about .headline {
+.support .headline {
   background-color: cadetblue;
   padding: .5rem 0 .5rem 1.25rem;
   font-weight: bold;
   color: white;
   max-width: 10rem;
   margin-bottom: 1rem;
+
 }
 
 .content {
@@ -128,4 +124,96 @@ footer {
 footer .container {
   display: flex;
   padding: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main-banner {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  .top-box {
+    max-width: 100%;
+  }
+
+  .white-box {
+    margin-top: 5rem;
+    margin-right: 2rem;
+    font-size: 1.33;
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .full-nav {
+    display: none;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .white-box {
+    margin-top: 9rem;
+    margin-right: 0;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+
+  .icon {
+    display: block;
+    font-size: 0.77rem;
+    margin: auto;
+    height: auto;
+  }
+
+  .fittings, .delivery {
+    padding-top: 1.54rem;
+  }
+
+  .support {
+    display: block;
+  }
+
+  .support .headline {
+    text-align: center;
+     max-width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .description {
+    font-size: .77rem;
+    margin-left: .5rem;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  footer .container {
+    justify-content: center;
+  }
+
 }
