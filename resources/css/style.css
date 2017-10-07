@@ -95,3 +95,37 @@ li {
 img.paper {
   max-width: 3.5rem;
 }
+
+.support {
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .headline {
+  background-color: cadetblue;
+  padding: .5rem 0 .5rem 1.25rem;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.content {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+footer {
+  background-color: azure;
+}
+
+footer .container {
+  display: flex;
+  padding: 4rem;
+}
